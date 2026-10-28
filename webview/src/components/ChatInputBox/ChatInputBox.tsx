@@ -50,6 +50,8 @@ export const ChatInputBox = memo(forwardRef<ChatInputBoxHandle, ChatInputBoxProp
       onProviderSelect,
       reasoningEffort = 'high',
       onReasoningChange,
+      claudeUltracode = false,
+      onClaudeUltracodeChange,
       codexFastMode = 'normal',
       onCodexFastModeChange,
       dshPreset,
@@ -246,6 +248,8 @@ export const ChatInputBox = memo(forwardRef<ChatInputBoxHandle, ChatInputBoxProp
           currentProvider={currentProvider}
           codexNativeAutoReviewAvailable={codexNativeAutoReviewAvailable}
           reasoningEffort={reasoningEffort}
+          claudeUltracode={claudeUltracode}
+          onClaudeUltracodeChange={onClaudeUltracodeChange}
           codexFastMode={codexFastMode}
           dshPreset={dshPreset}
           onSubmit={handleSubmit}
